@@ -29,13 +29,13 @@
         <nav class="nav">
           <ul class="nav-list list">
             <li class="nav-list-item">
-              <a class="nav-link link active" href="./studio.html">Студия</a>
+              <a class="nav-link link current" href="./index.html">Студия</a>
             </li>
             <li class="nav-list-item">
-              <a class="nav-link link active" href="./portfolio.html">Портфолио</a>
+              <a class="nav-link link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="nav-list-item">
-              <a class="nav-link link active" href="./contact.html">Контакты</a>
+              <a class="nav-link link" href="./contact.html">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -58,7 +58,7 @@
       <section class="main-hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения<br />для вашего бизнеса</h1>
-          <button class="hero-btn" type="button">Заказать услугу</button>
+          <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-- Main Quality -->
@@ -440,6 +440,12 @@
         </div>
       </div>
     </footer>
+    <!-- Modal Window -->
+    <div class="backdrop is-hidden data-modal">
+      <div class="modal-wrapper">
+        <button class="modal-button" type="button" data-modal-close>x</button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
